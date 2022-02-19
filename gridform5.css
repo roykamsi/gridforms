@@ -1,0 +1,175 @@
+:root {
+    --inset: 10px;
+    --violet: #9067C6;
+    --lightv: #8D86C9;
+    --darkv: #242038;
+    --darkw: #CAC4CE;
+    --lightw: #F7ECE1;
+    --gap: 20px;
+}
+
+body {
+    background: rgb(239, 253, 252);
+    font-family: 'Roboto', sans-serif;
+}
+p {
+    color: white;
+    text-align: center;
+}
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs > label {
+    padding: 25px;
+    background: var(--lightw);
+    cursor: pointer;
+    color: grey;
+    transform: translateY(10px);
+    transition: .3s all;
+}
+
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background-image: url(https://cdn.99images.com/photos/wallpapers/3d-abstract/neon-abstract%20android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4k-mku38.jpg);
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.589);
+    background-size:cover;
+    background-color: var(--lightv);
+    order: 1;
+    display: none;
+    overflow: hidden;
+    z-index: 1;
+}
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: grid;
+    overflow: hidden;
+}
+
+.mytabs input[type="radio"]:checked + label{
+    background: var(--violet);
+    overflow: hidden;
+    font-weight: bold;
+    color: white;
+    transition: .3s all;
+    transform: translateY(0px);
+}
+
+[for="tabfree"] {
+    border-top-left-radius: 5px;
+}
+[for="tabgold"] {
+    border-top-right-radius: 5px;
+}
+
+.tab-up {
+    width: 50%;
+}
+
+input#tabfree {
+    margin-top: 20px;
+    outline: auto;
+}
+
+.privacy-policy {
+    color: white;
+    cursor: pointer;
+    color: grey;
+    text-decoration: underline;
+}
+
+input {
+    padding: .8em;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+}
+button {
+    padding: .8em;
+    width: 100%;
+    background-color: var(--darkv);
+}
+
+.log-alter {
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* label #login-fb, label #login-twitter  {
+    width: 50%;
+} */
+
+[placeholder] {
+    padding-left: 40px;
+    color: var(--darkv);
+}
+[placeholder].pwd-conf {
+    padding-left: 60px;
+    color: var(--darkv);
+}
+
+
+label {
+    position: relative;
+}
+
+label[for="reg-email"]::before {
+    position: absolute;
+    top: 10px;
+    left: var(--inset);
+    content: '\f406';
+    color: var(--darkv);
+    position: absolute;
+    font-family: FontAwesome;
+}
+
+label[for="password"]::before {
+    position: absolute;
+    top: var(--inset);
+    left: var(--inset);
+    content: '\f2fe';
+    color: var(--darkv);
+    font-family: FontAwesome;
+}
+
+label[for="pwd-conf"]::before {
+    position: absolute;
+    top: var(--inset);
+    left: var(--inset);
+    content: '\f2fe   \f2fe';
+    color: var(--darkv);
+    position: absolute;
+    font-family: FontAwesome;
+}
+
+button {
+    border-radius: 2px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: var(--lightv);
+    transition: background-color .3s ease-out;
+    color: white;
+}
+
+button:hover {
+    background-color: var(--lightw);
+    transition: background-color .3s ease-out;
+    color: var(--lightv);
+}
+
+.tab {
+    display: grid;
+    gap: var(--gap);
+}
