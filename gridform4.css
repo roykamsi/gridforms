@@ -44,8 +44,7 @@ p {
     display: grid;
     grid-auto-columns: 100px;
     grid-template-columns: repeat( auto-fit, minmax(320px, 1fr));
-    grid-template-rows: 600px;
-    margin: auto 80px;
+    margin: auto auto;
 }
 
 /* STILI DELLA LISTA */
@@ -109,6 +108,7 @@ i {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 50px 60px;
+    padding-top: 0px;
     justify-content: center;
     align-items: center;
     align-content: center;
