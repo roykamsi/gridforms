@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>My first form in grids</title>
+    <meta name="description" content="Bonus Project for FreeCodeCamp" />
+    <meta name="author" content="RoyKamsi" />
+    <meta name="referrer" content="strict-origin" />
+
+    <meta property="og:title" content="A Basic HTML5 Template" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/" />
+    <meta property="og:description" content="A simple HTML5 Template for new projects." />
+    <meta property="og:image" content="image.png" />
+
+    <link rel="icon" href="#" />
+    <link rel="icon" href="#" type="" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-phGxLIsvHFArdI7IyLjv14dchvbVkEDaH95efvAae/y2exeWBQCQDpNFbOTdV1p4/pIa/XtbuDCnfhDEIXhvGQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="gridform.css" />
+
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <container>
+        <h1 class="brand">Le <span>migliori verdure</span></h1>
+        <div class="wrapper animate__animated animate__bounceInLeft animate__bounceIn">
+            <div class="company-info">
+                <h3>Le migliori verdure</h3>
+                <ul>
+                    <li><i class="fas fa-road"></i> Lorem</li>
+                    <li><i class="fas fa-phone"></i> Lorem Ipsum, 2</li>
+                    <li><i class="fas fa-envelope"></i> lorem3@email.com</li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <h3>Contattaci</h3>
+                <form action="">
+                    <p>
+                        <label for="">Nome</label>
+                        <input type="text" name="name">
+                    </p>
+                    <p>
+                        <label for="">Azienda</label>
+                        <input type="text" name="Azienda">
+                    </p>
+                    <p>
+                        <label for="">Indirizzo e-mail</label>
+                        <input type="email" name="e-mail">
+                    </p>
+                    <p>
+                        <label for="">Telefono</label>
+                        <input type="tel" name="telefono"  pattern="[0-9]{10}">
+                    </p>
+                    <p class="full">
+                        <label for="">Messaggio</label>
+                        <textarea name="message" id="testo" rows="5"></textarea>
+                    </p>
+                    <p class="full">
+                        <button>Submit</button>
+                    </p>
+                    
+                </form>
+            </div>
+        </div>
+    </container>
+</body>
+
+</html>
